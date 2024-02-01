@@ -1,0 +1,12 @@
+.lable {
+  display: inline-flex;
+  padding: 4px 14px;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  width: 83px;
+  border-radius: 28px;
+  font-size: 14px;
+  background-color: rgba(255, 237, 213, 1);
+  color: rgba(21, 128, 61, 1);
+}
