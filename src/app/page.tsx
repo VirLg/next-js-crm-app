@@ -1,4 +1,4 @@
-import { MyApp } from './components/forms/Formic';
+import FormAddCompany from './components/forms/formAddCompany/FormAddCompany';
 import LableStatus, { Status } from './components/forms/lable/LableStatus';
 
 export default function Home() {
@@ -9,7 +9,8 @@ export default function Home() {
       <LableStatus status={Status.NotActive}>Not Active</LableStatus>
       <LableStatus status={Status.Pending}>Pending</LableStatus>
       <LableStatus status={Status.Suspended}>Suspended</LableStatus>
-      <MyApp />
+
+      <FormAddCompany />
     </main>
   );
 }
