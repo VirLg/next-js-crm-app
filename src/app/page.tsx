@@ -1,5 +1,5 @@
-import Button from './components/button/Button';
-import LableStatus, { Status } from './components/lable/LableStatus';
+import { MyApp } from './components/forms/Formic';
+import LableStatus, { Status } from './components/forms/lable/LableStatus';
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <LableStatus status={Status.NotActive}>Not Active</LableStatus>
       <LableStatus status={Status.Pending}>Pending</LableStatus>
       <LableStatus status={Status.Suspended}>Suspended</LableStatus>
-      <Button />
+      <MyApp />
     </main>
   );
 }
