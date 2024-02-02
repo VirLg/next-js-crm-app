@@ -1,6 +1,7 @@
 'use client';
 import * as React from 'react';
 import { Formik, Form, Field } from 'formik';
+import Button from '../../button/Button';
 
 interface FormAddCompanyValues {
   name: string;
@@ -94,7 +95,8 @@ const FormAddCompany: React.FC<{}> = () => {
             placeholder="description"
             className="p-3 h-11 text-sm rounded border border-gray-300 shadow"
           />
-          <button type="submit">Submit</button>
+          {/* <button type="submit">Submit</button> */}
+          <Button />
         </Form>
       </Formik>
     </div>
