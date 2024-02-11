@@ -95,7 +95,7 @@ const FormAddCompany: React.FC<{}> = () => {
             placeholder="description"
             className="p-3 h-11 text-sm rounded border border-gray-300 shadow"
           />
-          {/* <button type="submit">Submit</button> */}
+          <Button />
         </Form>
       </Formik>
     </div>
