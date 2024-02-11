@@ -2,12 +2,11 @@
 import React from 'react';
 
 export interface ModalWindowProps {
-  show: true;
-  //   onClose: () => void;
   children: React.ReactNode;
+  onClose: () => void;
 }
 
-const ModalWindow = ({ show, children, onClose }: ModalWindowProps) => {
+const ModalWindow = ({ children, onClose }: ModalWindowProps) => {
   return (
     <div className="block fixed top-0 left-0 bg-gray-400 h-full w-full">
       <div
@@ -16,9 +15,7 @@ const ModalWindow = ({ show, children, onClose }: ModalWindowProps) => {
       "
       >
         {children}
-        <button className="bg-orange-100" onClick={() => !show}>
-          Close
-        </button>
+        <button onClick={() => onClose()}>del Company</button>
       </div>
     </div>
   );

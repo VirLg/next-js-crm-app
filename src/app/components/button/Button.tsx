@@ -18,3 +18,7 @@ const Button = ({ disabled, ...rest }: ButtonProps) => {
 };
 
 export default Button;
+
+export const About = () => {
+  return <div>About</div>;
+};
